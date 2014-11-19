@@ -20,7 +20,14 @@
         android:layout_height="200dp"
         android:id="@+id/imageView"
         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.ren.fah.meters.RotateImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView2"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/hari" />
+        android:adjustViewBounds="false" />
 
 </RelativeLayout>

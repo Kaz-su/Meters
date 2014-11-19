@@ -8,7 +8,8 @@ import android.widget.ImageView;
  * Created by k_sugimoto on 2014/11/19.
  */
 public class RotateImageView extends ImageView {
-    private int nowDegree = 0;
+    private static int offsetDegree = 0;
+    private int nowDegree = offsetDegree;
 
     public RotateImageView(Context context){
         super(context);
@@ -27,6 +28,10 @@ public class RotateImageView extends ImageView {
     }
 
     public void setNowDegree(int nowDegree) {
-        this.nowDegree = nowDegree;
+        this.nowDegree = nowDegree + offsetDegree;
+    }
+
+    public static int getOffsetDegree() {
+        return offsetDegree;
     }
 }
